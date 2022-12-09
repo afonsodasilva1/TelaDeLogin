@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+    background-color: #01070e;
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    background-color: #05101f;
+    text-align: center;
+    padding: .5em;
+    margin: 0 0 20px;
+    border-bottom: 1px solid  rgb(255, 255, 255);
+}
+section{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+fieldset{
+    background-color:#05101f;
+     width: 430px;
+     padding: 1em 2em;
+     border-radius: 20px;
+     border: 1px solid #1b2a3d;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    font: bold 13pt arial;
+    letter-spacing: .5px;
+}
+button{
+    cursor: pointer;
+}
+#email,
+#senha{
+    padding: 10px;
+    border-radius: 8px;
+    color: rgb(192, 190, 190);
+    background-color:#020b16;
+    letter-spacing: .8px;
+    font-size: 10pt;
+    margin: 6px 0 15px 0;
+}
+#email:focus,
+#senha:focus{
+    outline: 2px solid #032652;
+}
+
+#RecSenha,
+#ContNov{
+    color: rgb(206, 229, 255);
+    margin: 10px 0;
+    font-size: 10pt;
+}
+#ContNov{
+    font-size: 13pt;
+    text-align: center;
+}
+#btnEntrar,
+#fb,
+#Gg,
+#cadastro{
+    background-color: #020b16;
+    color: rgb(70, 93, 168);
+    border-radius: 30px;
+    outline: 1px solid rgb(70, 93, 168);
+    font: bold 10pt arial;
+    margin: 15px auto;
+    padding: 10px 0;
+    width: 50%;
+    transition: .3s;
+}
+#btnEntrar:hover,
+#cadastro{
+    background-color: rgb(17, 61, 207);
+    color: white;
+    outline: 1px solid rgb(17, 61, 207);
+}
+.divisao{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+}
+.outras{
+    width: 100%;
+    padding: 10px 0;
+}
+#fb,
+#Gg,
+#cadastro{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    outline: 1px solid rgb(14, 59, 117);
+    margin-top: 18px;
+}
+#fb{
+    background-color: rgb(14, 59, 117);
+    color: white;
+    
+   background-image: url('facebook.png');
+   background-repeat: no-repeat;
+   background-position: 3% 6px;
+}
+#fb:hover{
+    background-color: rgb(2, 18, 39);
+}
+#Gg{
+    background-color: white;
+    color: rgb(87, 85, 85);
+    background-image: url('google.png');
+    background-repeat: no-repeat;
+    background-position: 6% 5px;
+}
+#Gg:hover{
+    color: black;
+}
+#cadastro:hover{
+    background-color: green;
+}
+h1{
+    width: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    margin: 0 auto;
+    animation: titulo 1s steps(22);
+}
+@keyframes titulo {
+    from{
+        width: 0;
+    }
+}
